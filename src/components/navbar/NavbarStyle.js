@@ -44,6 +44,6 @@ export const Item = styled.div`
   transition: 0.3s;
 
   :hover {
-    color: white;
+    color: #c2c2d6;
   }
 `;
