@@ -1,3 +1,5 @@
+import { Wrapper } from "./FooterStyle";
+
 export const Footer = () => {
-  return <div>Footer</div>;
+  return <Wrapper>Footer</Wrapper>;
 };
