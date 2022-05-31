@@ -6,13 +6,13 @@ export const Wrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   padding-left: 70px;
   padding-right: 70px;
-  position: absolute;
-  width: 100%;
-  height: 88%;
-  gap: 15px;
+  height: 90vh;
+  overflow: hidden;
 
   @media (max-width: 920px) {
     grid-template-columns: 1fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   @media (max-width: 700px) {
@@ -24,6 +24,13 @@ export const Wrapper = styled.div`
     padding-left: 20px;
     padding-right: 20px;
   }
+`;
+
+export const Title = styled.h2`
+  color: #c2c2d6;
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-weight: 300;
 `;
 
 export const SkillContent = styled.div`

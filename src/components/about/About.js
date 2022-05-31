@@ -6,6 +6,7 @@ import {
   Description,
   SkillName,
   SkillIcon,
+  Title,
 } from "./AboutStyle";
 import { skills } from "../../data/skills";
 
@@ -18,8 +19,9 @@ export const About = () => {
   ));
 
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <TextContent>
+        <Title>About</Title>
         <Description>
           Poseo habilidades en Javascript. Reactjs, Hooks, Context Api, Redux,
           Nodejs, MongoDB, Firebase, GraphQL, Apollo Client, Express. Tengo 2

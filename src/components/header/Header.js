@@ -3,20 +3,19 @@ import {
   TextContent,
   Text1,
   Text2,
-  ImageContent,
   Img,
   IconsContent,
   Icon,
-} from "./HomeStyle";
+} from "./HeaderStyle";
 import imgFile from "../../assets/perfil.jpg";
 import { DiJavascript1 } from "react-icons/di";
 import { DiReact } from "react-icons/di";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 
-export const Home = () => {
+export const Header = () => {
   return (
-    <Wrapper>
+    <Wrapper id="header">
       <TextContent>
         <Text1>Pedro Perez</Text1>
         <Text2>Frontend Development</Text2>
@@ -35,9 +34,8 @@ export const Home = () => {
           </Icon>
         </IconsContent>
       </TextContent>
-      <ImageContent>
-        <Img src={imgFile} />
-      </ImageContent>
+
+      <Img src={imgFile} />
     </Wrapper>
   );
 };

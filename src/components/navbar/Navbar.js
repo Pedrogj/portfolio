@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Wrapper, IconConten, MenuContent, NavItem, Item } from "./NavbarStyle";
 import { BiCodeAlt } from "react-icons/bi";
 
@@ -10,24 +9,24 @@ export const Navbar = () => {
       </IconConten>
       <MenuContent>
         <NavItem>
-          <Link to={"/"}>
+          <a href="#header">
             <Item>Home</Item>
-          </Link>
+          </a>
         </NavItem>
         <NavItem>
-          <Link to={"about"}>
+          <a href="#about">
             <Item>About My</Item>
-          </Link>
+          </a>
         </NavItem>
         <NavItem>
-          <Link to={"projects"}>
+          <a href="#projects">
             <Item>Projects</Item>
-          </Link>
+          </a>
         </NavItem>
         <NavItem>
-          <Link to={"contact"}>
+          <a href="#contact">
             <Item>Contact</Item>
-          </Link>
+          </a>
         </NavItem>
       </MenuContent>
     </Wrapper>

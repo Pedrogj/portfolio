@@ -1,21 +1,27 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-items: center;
   padding-left: 70px;
   padding-right: 70px;
-  position: absolute;
-  width: 100%;
-  height: 88%;
+  height: 90vh;
+  overflow: hidden;
 
   @media (max-width: 920px) {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   @media (max-width: 700px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 425px) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
 
@@ -30,10 +36,14 @@ export const Text1 = styled.h1`
   color: #c2c2d6;
   font-size: 65px;
   font-weight: 300;
-  margin: 0;
+  margin: 0px;
 
   @media (max-width: 920px) {
     font-size: 50px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 30px;
   }
 `;
 
@@ -45,9 +55,12 @@ export const Text2 = styled.h2`
   @media (max-width: 920px) {
     font-size: 20px;
   }
-`;
 
-export const ImageContent = styled.div``;
+  @media (max-width: 425px) {
+    padding-top: 10px;
+    font-size: 15px;
+  }
+`;
 
 export const Img = styled.img`
   width: 350px;
@@ -65,9 +78,17 @@ export const IconsContent = styled.div`
   @media (max-width: 700px) {
     justify-content: center;
   }
+
+  @media (max-width: 425px) {
+    margin-top: 10px;
+  }
 `;
 
 export const Icon = styled.div`
   font-size: 50px;
   color: #c2c2d6;
+
+  @media (max-width: 425px) {
+    font-size: 45px;
+  }
 `;
