@@ -1,6 +1,5 @@
 import {
   Wrapper,
-  Title,
   Container,
   Item,
   Text1,
@@ -26,7 +25,6 @@ export const Projects = () => {
 
   return (
     <Wrapper id="projects">
-      <Title>Projects</Title>
       <Container>{requireContent}</Container>
     </Wrapper>
   );

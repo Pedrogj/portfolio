@@ -1,5 +1,30 @@
-import React from "react";
+import {
+  Wrapper,
+  Form,
+  Label,
+  Input,
+  InputContent,
+  Button,
+  TextArea,
+} from "./ContactStyle";
 
 export const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <Wrapper>
+      <Form>
+        <InputContent>
+          <Label></Label>
+          <Input />
+        </InputContent>
+        <InputContent>
+          <Label></Label>
+          <Input />
+        </InputContent>
+
+        <TextArea />
+
+        <Button>Send</Button>
+      </Form>
+    </Wrapper>
+  );
 };
