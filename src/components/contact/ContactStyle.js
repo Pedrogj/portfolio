@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   justify-content: center;
 `;
 
-export const Form = styled.form`
+export const FormMessage = styled.form`
   min-width: 600px;
   margin-top: 50px;
   padding: 20px;
@@ -25,7 +25,7 @@ export const Label = styled.label`
   font-weight: 300;
   font-size: 14px;
   margin-bottom: 5px;
-  color: #1f1f1f;
+  color: #c2c2d6;
 `;
 
 export const Input = styled.input`
@@ -62,6 +62,7 @@ export const Button = styled.button`
 export const TextArea = styled.textarea`
   background-color: #1f1f2e;
   width: 100%;
+  height: 100px;
   border-radius: 5px;
   border: 2px solid #61dafb;
   font-size: 18px;
