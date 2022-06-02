@@ -1,5 +1,16 @@
-import { Wrapper } from "./FooterStyle";
+import { Wrapper, Content, Row, Text } from "./FooterStyle";
 
 export const Footer = () => {
-  return <Wrapper>Footer</Wrapper>;
+  const year = new Date();
+  const currentYear = year.getFullYear();
+
+  return (
+    <Wrapper>
+      <Row>
+        <Content>
+          <Text>Created By Pedro Perez, {currentYear}</Text>
+        </Content>
+      </Row>
+    </Wrapper>
+  );
 };
