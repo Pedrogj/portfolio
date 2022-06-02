@@ -1,5 +1,7 @@
 import {
   Wrapper,
+  Container,
+  Row,
   TextContent,
   Text1,
   Text2,
@@ -15,27 +17,30 @@ import { DiCss3 } from "react-icons/di";
 
 export const Header = () => {
   return (
-    <Wrapper id="header">
-      <TextContent>
-        <Text1>Pedro Perez</Text1>
-        <Text2>Frontend Development</Text2>
-        <IconsContent>
-          <Icon>
-            <DiJavascript1 />
-          </Icon>
-          <Icon>
-            <DiReact />
-          </Icon>
-          <Icon>
-            <AiFillHtml5 />
-          </Icon>
-          <Icon>
-            <DiCss3 />
-          </Icon>
-        </IconsContent>
-      </TextContent>
-
-      <Img src={imgFile} />
-    </Wrapper>
+    <Container id="header">
+      <Wrapper>
+        <Row>
+          <TextContent>
+            <Text1>Pedro Perez</Text1>
+            <Text2>Frontend Development</Text2>
+            <IconsContent>
+              <Icon>
+                <DiJavascript1 />
+              </Icon>
+              <Icon>
+                <DiReact />
+              </Icon>
+              <Icon>
+                <AiFillHtml5 />
+              </Icon>
+              <Icon>
+                <DiCss3 />
+              </Icon>
+            </IconsContent>
+          </TextContent>
+          <Img src={imgFile} />
+        </Row>
+      </Wrapper>
+    </Container>
   );
 };

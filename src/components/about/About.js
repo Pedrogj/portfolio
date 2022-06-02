@@ -1,5 +1,7 @@
 import {
   Wrapper,
+  Container,
+  Row,
   SkillContent,
   SkillCard,
   TextContent,
@@ -18,19 +20,23 @@ export const About = () => {
   ));
 
   return (
-    <Wrapper id="about">
-      <TextContent>
-        <Description>
-          Poseo habilidades en Javascript. Reactjs, Hooks, Context Api, Redux,
-          Nodejs, MongoDB, Firebase, GraphQL, Apollo Client, Express. Tengo 2
-          años de experiencia como Desarrollador Web, desarrollador frontend,
-          javascript. He realizado diferentes proyectos en los que he tenido la
-          oportunidad de avanzar en mis habilidades. Soy una persona autodidacta
-          lo cual mi disciplina diaria es estudiar y enfocarme en el reto de
-          cada desarrollo.
-        </Description>
-      </TextContent>
-      <SkillContent>{requireConten}</SkillContent>
-    </Wrapper>
+    <Container id="about">
+      <Wrapper>
+        <Row>
+          <TextContent>
+            <Description>
+              Poseo habilidades en Javascript. Reactjs, Hooks, Context Api,
+              Redux, Nodejs, MongoDB, Firebase, GraphQL, Apollo Client, Express.
+              Tengo 2 años de experiencia como Desarrollador Web, desarrollador
+              frontend, javascript. He realizado diferentes proyectos en los que
+              he tenido la oportunidad de avanzar en mis habilidades. Soy una
+              persona autodidacta lo cual mi disciplina diaria es estudiar y
+              enfocarme en el reto de cada desarrollo.
+            </Description>
+          </TextContent>
+          <SkillContent>{requireConten}</SkillContent>
+        </Row>
+      </Wrapper>
+    </Container>
   );
 };

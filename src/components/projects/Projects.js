@@ -1,6 +1,8 @@
 import {
   Wrapper,
   Container,
+  Row,
+  CardContent,
   Item,
   Text1,
   Img,
@@ -24,8 +26,12 @@ export const Projects = () => {
   ));
 
   return (
-    <Wrapper id="projects">
-      <Container>{requireContent}</Container>
-    </Wrapper>
+    <Container id="projects">
+      <Wrapper>
+        <Row>
+          <CardContent>{requireContent}</CardContent>
+        </Row>
+      </Wrapper>
+    </Container>
   );
 };

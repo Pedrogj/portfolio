@@ -1,14 +1,24 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Container = styled.div`
+  min-height: 90vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto;
+`;
+
+export const Wrapper = styled.div`
+  padding: 0px 25px 0px 25px;
+  display: grid;
+  @media (max-width: 960px) {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+`;
+
+export const Row = styled.div`
+  display: flex;
   align-items: center;
-  justify-items: center;
-  padding-left: 70px;
-  padding-right: 70px;
-  height: 90vh;
-  overflow: hidden;
+  justify-content: space-around;
 
   @media (max-width: 920px) {
     padding-top: 50px;
@@ -16,7 +26,7 @@ export const Wrapper = styled.div`
   }
 
   @media (max-width: 700px) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   @media (max-width: 425px) {

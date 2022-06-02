@@ -1,13 +1,26 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: auto;
+`;
+
 export const Wrapper = styled.div`
+  padding: 0px 25px 0px 25px;
+  display: grid;
+  @media (max-width: 960px) {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+`;
+
+export const Row = styled.div`
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-left: 70px;
   padding-right: 70px;
-  height: 90vh;
-  overflow: hidden;
 
   @media (max-width: 920px) {
     grid-template-columns: 1fr;
