@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkScroll } from "react-scroll";
 
 export const Wrapper = styled.div`
   background: rgba(255, 255, 255, 0.1);
@@ -25,9 +26,26 @@ export const IconConten = styled.div`
   font-size: 40px;
 `;
 
-export const MenuContent = styled.div`
+export const MobileIcon = styled.div`
+  display: none;
+  @media (max-width: 620px) {
+    display: block;
+    position: absolute;
+    margin-top: -7px;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #61dafb;
+  }
+`;
+
+export const MenuContent = styled.ul`
   display: flex;
   align-items: center;
+  list-style: none;
+  text-align: center;
   justify-content: space-between;
 
   @media (max-width: 620px) {
@@ -35,15 +53,22 @@ export const MenuContent = styled.div`
   }
 `;
 
-export const NavItem = styled.div`
-  padding: 10px;
+export const NavItem = styled.li`
+  padding: 5px;
 `;
 
-export const Item = styled.div`
+export const Item = styled(LinkScroll)`
   color: #61dafb;
-  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 
   :hover {
     color: #c2c2d6;
+    transition: 0.2s ease-in-out;
   }
 `;

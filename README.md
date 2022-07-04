@@ -5,3 +5,4 @@
 - Formik
 - EmailJS
 - React-toastify
+- React-scroll

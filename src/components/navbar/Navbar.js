@@ -1,32 +1,35 @@
-import { Wrapper, IconConten, MenuContent, NavItem, Item } from "./NavbarStyle";
+import {
+  Wrapper,
+  IconConten,
+  MenuContent,
+  NavItem,
+  Item,
+  MobileIcon,
+} from "./NavbarStyle";
 import { BiCodeAlt } from "react-icons/bi";
+import { FaBars } from "react-icons/fa";
 
-export const Navbar = () => {
+export const Navbar = ({ toggle }) => {
   return (
     <Wrapper>
       <IconConten>
         <BiCodeAlt />
       </IconConten>
+      <MobileIcon onClick={toggle}>
+        <FaBars />
+      </MobileIcon>
       <MenuContent>
         <NavItem>
-          <a href="#header">
-            <Item>Home</Item>
-          </a>
+          <Item to="home">Home</Item>
         </NavItem>
         <NavItem>
-          <a href="#about">
-            <Item>About My</Item>
-          </a>
+          <Item to="about">About My</Item>
         </NavItem>
         <NavItem>
-          <a href="#projects">
-            <Item>Projects</Item>
-          </a>
+          <Item to="projects">Projects</Item>
         </NavItem>
         <NavItem>
-          <a href="#contact">
-            <Item>Contact</Item>
-          </a>
+          <Item to="contact">Contact</Item>
         </NavItem>
       </MenuContent>
     </Wrapper>
